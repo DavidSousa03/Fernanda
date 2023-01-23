@@ -2,13 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;  
-    font-family: 'Poppins', "sans-serif";
+    font-family: "roboto";
     font-weight: 600;
 }
 body{
     display: flex;
     flex-wrap: wrap;
     background-color: rgb(252, 249, 249) ;
+    width: 100vw;
+    height: 100vh;
 }
 .top-bar{
     display: flex;
@@ -21,21 +23,16 @@ body{
     width: 150px;
     margin-top: -25px;
 }
-#button button{
-    border-radius: 25%;
-    margin: 0.4rem 0.4rem;
-    cursor: pointer;
-    background-color: black;
-    margin-top: 10px; 
+#user img {
+    height: 85px;
+    border-radius: 50%;
+    padding: 2px 4px;
+    
 }
-#button button:hover{
-    background-color: rgb(247, 247, 247);
-}
+
 .price-list{
     display: flex;
-    position: center;
-    margin: 2rem;
-    
+    margin: 1rem; 
 }
 .responsive table{
     overflow: hidden;
@@ -45,11 +42,13 @@ table{
     min-width: 350px;
     width: 100%;
     border-collapse: collapse;
+    
 }
 table td, table th{
     padding: 0.5rem;
     text-align: left;
     border: 0.1rem solid rgb(8, 8, 8);
+    font-weight: bolder;
 }
 table th{
     background-color: rgb(245, 177, 222);
@@ -60,7 +59,24 @@ table th{
     font-size: 0.8rem;
     
 }
-#attention p, h2 {
+#attention  {
     font-weight: 600;
-    color: white;
+    color: red;
+}
+#button {
+    margin: 1rem;
+}    
+#button button{
+    border-radius: 25%;
+    margin: 0.4rem 0.4rem;
+    cursor: pointer;
+    background-color: black;
+    
+    
+}
+#button button:hover{
+    background-color: rgb(247, 247, 247);
+}
+#button h2 {
+    font-weight: bold;
 }
